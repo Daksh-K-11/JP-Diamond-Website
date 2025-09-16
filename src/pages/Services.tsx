@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ArrowRight, Clock, Shield, Award, CheckCircle } from 'lucide-react';
 import diamondCertification from '@/assets/diamond-certification.jpg';
-import jewelryCertification from '@/assets/jewelry-certification.jpg';
+import jewelryCertification from '@/assets/jewelery-certification.jpg';
 import diamondSealing from '@/assets/diamond-sealing.jpg';
 
 const Services = () => {

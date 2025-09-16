@@ -5,7 +5,7 @@ import ServiceCard from '@/components/ServiceCard';
 import Navigation from '@/components/Navigation';
 import { Phone, Mail, MapPin, Shield, Award, Users } from 'lucide-react';
 import diamondCertification from '@/assets/diamond-certification.jpg';
-import jewelryCertification from '@/assets/jewelry-certification.jpg';
+import jewelryCertification from '@/assets/jewelery-certification.jpg';
 import diamondSealing from '@/assets/diamond-sealing.jpg';
 
 const Index = () => {
