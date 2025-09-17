@@ -115,7 +115,7 @@ const Index = () => {
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Get in touch with our expert team for professional diamond certification services. 
-            We're here to help you with all your gemological needs.
+            We're here to help you with all your needs.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -129,7 +129,7 @@ const Index = () => {
             </div>
             <div className="flex items-center justify-center sm:justify-start">
               <MapPin className="w-5 h-5 text-primary mr-2" />
-              <span className="text-foreground">New York, NY</span>
+              <span className="text-foreground">NSC Bose Road, Chennai</span>
             </div>
           </div>
 

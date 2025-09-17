@@ -95,7 +95,7 @@ const About = () => {
                   solely on providing honest results, handled with confidentiality and professionalism.
                 </p>
                 <p>
-                  Our team of skilled gemologists combines technical expertise with a 
+                  Our team combines technical expertise with a 
                   customer-first approach, making us your trusted partner in diamond verification.
                 </p>
                 <p>

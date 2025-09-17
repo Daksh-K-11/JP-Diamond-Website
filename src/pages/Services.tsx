@@ -168,7 +168,7 @@ const Services = () => {
             Our Services
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive gemological services backed by cutting-edge technology and unmatched expertise
+            Comprehensive services backed by cutting-edge technology and unmatched expertise
           </p>
         </div>
       </section>
