@@ -44,12 +44,12 @@ const About = () => {
     }
   ];
 
-  const achievements = [
-    { icon: Award, title: "ISO 17025 Certified", description: "Internationally accredited testing laboratory" },
-    { icon: Users, title: "50+ Expert Gemologists", description: "Certified professionals with decades of experience" },
-    { icon: Globe, title: "Global Recognition", description: "Certificates accepted worldwide" },
-    { icon: Shield, title: "Secure Facility", description: "State-of-the-art security and insurance coverage" }
-  ];
+  // const achievements = [
+  //   { icon: Award, title: "ISO 17025 Certified", description: "Internationally accredited testing laboratory" },
+  //   { icon: Users, title: "50+ Expert Gemologists", description: "Certified professionals with decades of experience" },
+  //   { icon: Globe, title: "Global Recognition", description: "Certificates accepted worldwide" },
+  //   { icon: Shield, title: "Secure Facility", description: "State-of-the-art security and insurance coverage" }
+  // ];
 
   return (
     <div className="min-h-screen bg-background">

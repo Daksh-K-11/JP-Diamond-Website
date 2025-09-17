@@ -16,7 +16,7 @@ const carouselItems = [
   {
     image: labTesting,
     title: "Professional Testing Laboratory",
-    subtitle: "ISO certified facility",
+    subtitle: "Advance and modern facility",
     description: "Cutting-edge technology meets traditional expertise for unparalleled precision."
   },
   {
