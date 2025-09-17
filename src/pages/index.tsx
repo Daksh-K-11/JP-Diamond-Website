@@ -44,16 +44,18 @@ const Index = () => {
       <section className="section-padding bg-gradient-to-b from-white to-accent/20">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-display text-4xl sm:text-5xl font-bold mb-6 text-gradient-gold">
-            About jpdiamondlab
+            About JP Diamondlab
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
-            With over 25 years of expertise in gemological analysis, jpdiamondlab stands as a beacon of 
-            trust and precision in diamond certification. Our state-of-the-art facility and team of certified
-            gemologists ensure that every diamond receives the most accurate assessment possible.
+            JP Diamond is a professional diamond testing laboratory established to bring
+            transparency & trust to the jewelry market. Our lab is equipped with advance testing
+            instruments and operated by skilled gemologists who follow international standards.
+            From checking authenticity to identifying treatments, we ensure every report 
+            reflects precision and integrity.
           </p>
           
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {stats.map((stat, index) => (
               <div key={index} className="text-center animate-in zoom-in-95 duration-500" style={{ animationDelay: `${index * 100}ms` }}>
                 <stat.icon className="w-12 h-12 text-primary mx-auto mb-4" />
@@ -61,7 +63,7 @@ const Index = () => {
                 <div className="text-muted-foreground">{stat.label}</div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           <Link to="/about">
             <Button className="btn-gold text-lg px-8 py-4 h-auto">
