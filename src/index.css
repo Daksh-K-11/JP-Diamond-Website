@@ -6,6 +6,12 @@
 
 /* Diamond Lab Professional Design System - White & Gold Theme */
 
+html {
+  color-scheme: light;
+  forced-color-adjust: none;
+}
+
+
 @layer base {
   :root {
     /* Core Brand Colors */
