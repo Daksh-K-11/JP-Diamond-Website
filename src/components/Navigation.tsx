@@ -16,7 +16,14 @@ const Navigation = () => {
     { name: 'Contact Us', path: '/contact' },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  // const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => {
+    if (path === "/") {
+      return location.pathname === "/";
+    }
+    return location.pathname.startsWith(path);
+  };
+
 
   return (
     <nav className="bg-white/95 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50 transition-all duration-300">
@@ -79,8 +86,8 @@ const Navigation = () => {
                   to={item.path}
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200 ${isActive(item.path)
-                      ? 'text-primary bg-accent'
-                      : 'text-foreground hover:text-primary hover:bg-accent/50'
+                    ? 'text-primary bg-accent'
+                    : 'text-foreground hover:text-primary hover:bg-accent/50'
                     }`}
                 >
                   {item.name}
