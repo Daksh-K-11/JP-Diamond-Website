@@ -11,7 +11,7 @@ const About = () => {
       name: "Sarah Johnson",
       role: "Jewelry Store Owner",
       company: "Elegant Gems",
-      content: "jpdiamondlab has been our trusted certification partner for over 10 years. Their attention to detail and quick turnaround times have helped us build customer confidence.",
+      content: "JP Diamondlab has been our trusted certification partner for over 10 years. Their attention to detail and quick turnaround times have helped us build customer confidence.",
       rating: 5
     },
     {

@@ -238,7 +238,7 @@ const VerifyReport = () => {
                           <span className="font-semibold">Authentic Report</span>
                         </div>
                         <p className="text-sm text-green-700 mt-1">
-                          This report has been verified as authentic and issued by jpdiamondlab.
+                          This report has been verified as authentic and issued by JP Diamondlab.
                         </p>
                       </div>
                     </div>

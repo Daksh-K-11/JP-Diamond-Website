@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Gem } from 'lucide-react';
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,9 +24,13 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <Gem className="h-8 w-8 text-primary group-hover:rotate-12 transition-transform duration-300" />
+            <img
+              src={logo}
+              alt="JP Diamondlab Logo"
+              className="h-8 w-8 object-contain transition-transform duration-300 group-hover:rotate-12"
+            />
             <span className="font-display text-xl font-bold text-gradient-gold">
-              jpdiamondlab
+              JP Diamondlab
             </span>
           </Link>
 
@@ -35,11 +40,10 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                  isActive(item.path)
+                className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${isActive(item.path)
                     ? 'text-primary'
                     : 'text-foreground hover:text-primary'
-                }`}
+                  }`}
               >
                 {item.name}
                 {isActive(item.path) && (
@@ -74,11 +78,10 @@ const Navigation = () => {
                   key={item.name}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200 ${
-                    isActive(item.path)
+                  className={`block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200 ${isActive(item.path)
                       ? 'text-primary bg-accent'
                       : 'text-foreground hover:text-primary hover:bg-accent/50'
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
