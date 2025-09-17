@@ -14,60 +14,63 @@ html {
 
 @layer base {
   :root {
+    color-scheme: light !important;
+    forced-color-adjust: none !important;
+
     /* Core Brand Colors */
     --background: 0 0% 100%;
     --foreground: 222 15% 15%;
-    
+
     /* Gold Palette */
     --gold-primary: 43 96% 56%;
     --gold-secondary: 45 100% 51%;
     --gold-accent: 38 92% 50%;
     --gold-muted: 45 29% 89%;
-    
+
     /* Surface Colors */
     --card: 0 0% 100%;
     --card-foreground: 222 15% 15%;
-    
+
     --popover: 0 0% 100%;
     --popover-foreground: 222 15% 15%;
-    
+
     /* Primary using gold */
     --primary: 43 96% 56%;
     --primary-foreground: 0 0% 100%;
-    
+
     /* Secondary - subtle gold */
     --secondary: 45 29% 97%;
     --secondary-foreground: 222 15% 15%;
-    
+
     /* Muted tones */
     --muted: 220 13% 96%;
     --muted-foreground: 220 9% 46%;
-    
+
     /* Accent gold */
     --accent: 45 29% 97%;
     --accent-foreground: 43 96% 56%;
-    
+
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    
+
     /* Borders & Inputs */
     --border: 220 13% 91%;
     --input: 220 13% 91%;
     --ring: 43 96% 56%;
-    
+
     /* Design tokens */
     --radius: 0.75rem;
-    
+
     /* Gradients */
     --gradient-gold: linear-gradient(135deg, hsl(var(--gold-primary)), hsl(var(--gold-secondary)));
     --gradient-gold-subtle: linear-gradient(135deg, hsl(var(--gold-muted)), hsl(var(--background)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--gold-muted)));
-    
+
     /* Shadows */
     --shadow-gold: 0 10px 40px -10px hsl(var(--gold-primary) / 0.3);
     --shadow-elegant: 0 20px 60px -10px hsl(220 13% 46% / 0.1);
     --shadow-card: 0 4px 20px -2px hsl(220 13% 46% / 0.08);
-    
+
     /* Typography scale */
     --font-display: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
@@ -89,7 +92,7 @@ html {
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
+  /* .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 
@@ -125,8 +128,14 @@ html {
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+  } */
 }
+
+html, body {
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+
 
 @layer base {
   * {
@@ -137,44 +146,50 @@ html {
     @apply bg-background text-foreground font-body;
     scroll-behavior: smooth;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
   }
 }
 
 @layer components {
+
   /* Button variants */
   .btn-gold {
     @apply bg-gradient-to-r from-primary to-yellow-400 text-primary-foreground;
     @apply hover:shadow-[var(--shadow-gold)] transition-all duration-300;
     @apply hover:scale-105 active:scale-95;
   }
-  
+
   .btn-outline-gold {
     @apply border-2 border-primary text-primary bg-transparent;
     @apply hover:bg-gradient-to-r hover:from-primary hover:to-yellow-400;
     @apply hover:text-primary-foreground transition-all duration-300;
   }
-  
+
   /* Card styles */
   .card-gold {
     @apply bg-card border border-border/50 rounded-lg;
     @apply shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)];
     @apply transition-all duration-300 hover:-translate-y-1;
   }
-  
+
   /* Text gradients */
   .text-gradient-gold {
     @apply bg-gradient-to-r from-primary via-yellow-500 to-yellow-600;
     @apply bg-clip-text text-transparent;
   }
-  
+
   /* Section spacing */
   .section-padding {
     @apply py-20 px-4 sm:px-6 lg:px-8;
   }
-  
+
   /* Hero background */
   .hero-bg {
     background: var(--gradient-hero);
