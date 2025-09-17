@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -55,8 +56,8 @@ const Services = () => {
           description: 'Compilation of findings into a comprehensive certification report.'
         }
       ],
-      turnaround: '3-5 business days',
-      price: 'Starting from $150'
+      // turnaround: '3-5 business days',
+      // price: 'Starting from $150'
     },
     'jewelry-certification': {
       title: 'Jewellery Certification',
@@ -64,7 +65,7 @@ const Services = () => {
       description: 'Professional authentication and valuation of fine jewelry pieces.',
       features: [
         'Metal purity testing',
-        'Gemstone identification and grading',
+        'Identification and grading',
         'Craftsmanship assessment',
         'Market valuation',
         'Detailed photographic documentation',
@@ -102,8 +103,8 @@ const Services = () => {
           description: 'Creation of detailed certification and appraisal documentation.'
         }
       ],
-      turnaround: '5-7 business days',
-      price: 'Starting from $200'
+      // turnaround: '5-7 business days',
+      // price: 'Starting from $200'
     },
     'diamond-sealing': {
       title: 'Sealing of Diamonds',
@@ -149,8 +150,8 @@ const Services = () => {
           description: 'Final inspection and verification of sealed package integrity.'
         }
       ],
-      turnaround: '1-2 business days',
-      price: 'Starting from $75'
+      // turnaround: '1-2 business days',
+      // price: 'Starting from $75'
     }
   };
 
@@ -159,7 +160,7 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-b from-accent/10 to-white">
         <div className="max-w-6xl mx-auto text-center">
@@ -177,8 +178,8 @@ const Services = () => {
         <div className="max-w-6xl mx-auto">
           <Tabs value={activeService} onValueChange={setActiveService} className="w-full">
             <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 h-auto p-1 bg-accent/50">
-              <TabsTrigger 
-                value="diamond-certification" 
+              <TabsTrigger
+                value="diamond-certification"
                 className="text-left p-4 data-[state=active]:bg-white data-[state=active]:text-primary"
               >
                 <div>
@@ -186,8 +187,8 @@ const Services = () => {
                   <div className="text-xs text-muted-foreground mt-1">Complete 4Cs Analysis</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger 
-                value="jewelry-certification" 
+              <TabsTrigger
+                value="jewelry-certification"
                 className="text-left p-4 data-[state=active]:bg-white data-[state=active]:text-primary"
               >
                 <div>
@@ -195,8 +196,8 @@ const Services = () => {
                   <div className="text-xs text-muted-foreground mt-1">Authentication & Valuation</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger 
-                value="diamond-sealing" 
+              <TabsTrigger
+                value="diamond-sealing"
                 className="text-left p-4 data-[state=active]:bg-white data-[state=active]:text-primary"
               >
                 <div>
@@ -216,9 +217,9 @@ const Services = () => {
                       alt={service.title}
                       className="rounded-lg shadow-[var(--shadow-elegant)] w-full"
                     />
-                    <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg">
+                    {/* <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg">
                       <div className="text-sm font-semibold">{service.turnaround}</div>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Service Details */}
@@ -244,7 +245,7 @@ const Services = () => {
                     </div>
 
                     {/* Pricing & Turnaround */}
-                    <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                    {/* <div className="flex flex-col sm:flex-row gap-4 mb-8">
                       <div className="flex items-center bg-accent/50 rounded-lg p-4 flex-1">
                         <Clock className="w-5 h-5 text-primary mr-3" />
                         <div>
@@ -259,12 +260,14 @@ const Services = () => {
                           <div className="text-sm text-muted-foreground">{service.price}</div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
 
-                    <Button className="btn-gold w-full sm:w-auto">
-                      Request Service
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
+                    <Link to='/contact'>
+                      <Button className="btn-gold w-full sm:w-auto">
+                        Request Service
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
                   </div>
                 </div>
 
@@ -301,12 +304,11 @@ const Services = () => {
             We offer specialized services tailored to your specific requirements. Contact us to discuss your unique needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-gold">
-              Contact Us
-            </Button>
-            <Button variant="outline" className="btn-outline-gold">
-              Download Service Guide
-            </Button>
+            <Link to='/contact'>
+              <Button className="btn-gold">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

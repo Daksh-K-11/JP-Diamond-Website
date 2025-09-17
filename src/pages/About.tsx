@@ -230,7 +230,7 @@ const About = () => {
             Ready to Work With Us?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join thousands of satisfied clients who trust jpdiamondlab for their certification needs.
+            Join thousands of satisfied clients who trust JP Diamondlab for their certification needs.
           </p>
           <Button className="btn-gold text-lg px-8 py-4 h-auto">
             Get Started Today
