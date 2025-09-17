@@ -27,11 +27,11 @@ const Index = () => {
     }
   ];
 
-  const stats = [
-    { icon: Shield, value: "25+", label: "Years Experience" },
-    { icon: Award, value: "50K+", label: "Certified Diamonds" },
-    { icon: Users, value: "1000+", label: "Satisfied Clients" }
-  ];
+  // const stats = [
+  //   { icon: Shield, value: "25+", label: "Years Experience" },
+  //   { icon: Award, value: "50K+", label: "Certified Diamonds" },
+  //   { icon: Users, value: "1000+", label: "Satisfied Clients" }
+  // ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -81,7 +81,7 @@ const Index = () => {
               Our Services
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive gemological services backed by cutting-edge technology and unmatched expertise
+              Comprehensive services backed by cutting-edge technology and unmatched expertise
             </p>
           </div>
 
@@ -99,7 +99,7 @@ const Index = () => {
 
           <div className="text-center">
             <Link to="/services">
-              <Button variant="outline" className="btn-outline-gold text-lg px-8 py-4 h-auto">
+              <Button variant="outline" className="btn-outline-gold hover:text-primary-foreground text-lg px-8 py-4 h-auto">
                 View All Services
               </Button>
             </Link>

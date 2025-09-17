@@ -29,7 +29,8 @@ const ServiceCard = ({ image, title, description, onClick }: ServiceCardProps) =
         </p>
         <Button 
           variant="ghost" 
-          className="text-primary hover:text-primary-foreground hover:bg-primary p-0 h-auto group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-yellow-400"
+          className="text-primary p-0 h-auto "
+          // className="text-primary hover:text-primary-foreground hover:bg-primary p-0 h-auto group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-yellow-400"
         >
           Learn More
           <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
