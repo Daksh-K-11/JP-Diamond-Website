@@ -51,9 +51,9 @@ const Navigation = () => {
                 )}
               </Link>
             ))}
-            <Button className="btn-gold ml-4">
+            {/* <Button className="btn-gold ml-4">
               Get Quote
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile menu button */}
@@ -86,11 +86,11 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-2">
+              {/* <div className="pt-2">
                 <Button className="btn-gold w-full">
                   Get Quote
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         )}
