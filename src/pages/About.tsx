@@ -66,10 +66,10 @@ const About = () => {
         <div className="relative h-full flex items-center justify-center text-center text-white">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="font-display text-5xl sm:text-6xl font-bold mb-4 animate-in fade-in duration-700">
-              About jpdiamondlab
+              About JP Diamondlab
             </h1>
             <p className="text-xl sm:text-2xl animate-in slide-in-from-bottom-8 duration-700 delay-200">
-              Leading the industry in diamond certification since 1998
+              Here to lead the industry in diamond certification
             </p>
           </div>
         </div>
@@ -85,19 +85,18 @@ const About = () => {
               </h2>
               <div className="prose prose-lg text-muted-foreground space-y-4">
                 <p>
-                  Founded in 1998 by renowned gemologist Dr. Robert Sterling, jpdiamondlab began as a 
-                  small certification service with a vision to bring unprecedented accuracy and transparency
-                  to diamond grading.
+                  Equipped with advanced gemological instruments, we specialize in 
+                  detecting natural vs. lab-grown diamonds, identifying simulants, and grading stones 
+                  with precision. Every report is prepared to global standards, ensuring clarity and 
+                  confidence in every transaction.
                 </p>
                 <p>
-                  Over the past 25 years, we have grown into one of the most trusted names in the industry, 
-                  certifying over 50,000 diamonds annually. Our commitment to scientific excellence and 
-                  continuous innovation has established us as a global leader in gemological services.
+                  Integrity is at the heart of what we do. As an independent testing facility, we focus 
+                  solely on providing honest results, handled with confidentiality and professionalism.
                 </p>
                 <p>
-                  Today, jpdiamondlab operates from a state-of-the-art 15,000 square foot facility in 
-                  New York, equipped with the latest gemological instruments and staffed by over 50
-                  certified professionals.
+                  Our team of skilled gemologists combines technical expertise with a 
+                  customer-first approach, making us your trusted partner in diamond verification.
                 </p>
                 <p>
                   We take pride in our role as guardians of diamond authenticity, helping consumers, 
@@ -111,17 +110,13 @@ const About = () => {
                 alt="Laboratory testing"
                 className="rounded-lg shadow-[var(--shadow-elegant)] w-full"
               />
-              <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground p-6 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold">25+</div>
-                <div className="text-sm">Years of Excellence</div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Achievements Section */}
-      <section className="section-padding bg-gradient-to-b from-accent/10 to-white">
+      {/* <section className="section-padding bg-gradient-to-b from-accent/10 to-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-display text-4xl font-bold mb-6 text-gradient-gold">
@@ -142,7 +137,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission & Values */}
       <section className="section-padding bg-white">
