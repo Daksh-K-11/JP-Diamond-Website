@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import HeroCarousel from '@/components/HeroCarousel';
 import ServiceCard from '@/components/ServiceCard';
@@ -11,16 +11,19 @@ import diamondSealing from '@/assets/diamond-sealing.jpg';
 const Index = () => {
   const services = [
     {
+      slug: "diamond-certification",
       image: diamondCertification,
       title: "Diamond Certification",
       description: "Comprehensive analysis and grading of diamonds with internationally recognized standards. Our certified gemologists provide detailed reports on cut, clarity, color, and carat weight."
     },
     {
+      slug: "jewelry-certification",
       image: jewelryCertification,
       title: "Jewellery Certification",
       description: "Professional authentication and valuation of fine jewelry pieces. Complete assessment of precious metals, gemstones, and craftsmanship quality."
     },
     {
+      slug: "diamond-sealing",
       image: diamondSealing,
       title: "Sealing of Diamonds",
       description: "Secure diamond sealing services with tamper-evident packaging. Ensures the integrity and authenticity of certified diamonds throughout the supply chain."
@@ -32,6 +35,8 @@ const Index = () => {
   //   { icon: Award, value: "50K+", label: "Certified Diamonds" },
   //   { icon: Users, value: "1000+", label: "Satisfied Clients" }
   // ];
+
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-background">
@@ -92,7 +97,8 @@ const Index = () => {
                 image={service.image}
                 title={service.title}
                 description={service.description}
-                onClick={() => window.location.href = '/services'}
+                // onClick={() => window.location.href = '/services'}
+                onClick={() => navigate(`/services/${service.slug}`)}
               />
             ))}
           </div>

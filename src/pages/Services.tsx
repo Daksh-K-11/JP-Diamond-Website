@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -9,7 +9,14 @@ import jewelryCertification from '@/assets/jewelery-certification.jpg';
 import diamondSealing from '@/assets/diamond-sealing.jpg';
 
 const Services = () => {
+  const { serviceId } = useParams<{ serviceId: string }>();
   const [activeService, setActiveService] = useState('diamond-certification');
+
+  useEffect(() => {
+    if (serviceId) {
+      setActiveService(serviceId);
+    }
+  }, [serviceId]);
 
   const services = {
     'diamond-certification': {
