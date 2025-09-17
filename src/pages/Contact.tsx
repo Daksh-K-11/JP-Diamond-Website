@@ -38,10 +38,9 @@ const Contact = () => {
       icon: Mail,
       title: 'Email',
       details: [
-        'info@jpdiamondlab.in',
-        // 'General: info@jpdiamondlab.in',
-        // 'Services: services@jpdiamondlab.in',
-        // 'Support: support@jpdiamondlab.in'
+        'General: info@jpdiamondlab.in',
+        'Services: services@jpdiamondlab.in',
+        'Support: support@jpdiamondlab.in'
       ]
     },
     {
