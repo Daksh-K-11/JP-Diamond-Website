@@ -3,11 +3,12 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
+import { Link } from 'react-router-dom';
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
   Send,
   MessageSquare,
   Calendar,
@@ -78,7 +79,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-b from-accent/10 to-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -141,17 +142,18 @@ const Contact = () => {
 
                 <div>
                   <Label htmlFor="message">Message *</Label>
-                  <Textarea 
-                    id="message" 
+                  <Textarea
+                    id="message"
                     placeholder="Please describe your requirements or questions..."
                     className="mt-1 min-h-[120px]"
                   />
                 </div>
-
-                <Button className="btn-gold w-full sm:w-auto">
-                  <Send className="w-4 h-4 mr-2" />
-                  Send Message
-                </Button>
+                <Link to='/contact'>
+                  <Button className="btn-gold w-full sm:w-auto">
+                    {/* <Send className="w-4 h-4 mr-2" /> */}
+                    Send Message
+                  </Button>
+                </Link>
               </form>
             </div>
 
@@ -212,7 +214,7 @@ const Contact = () => {
             </p>
           </div> */}
 
-          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {officeLocations.map((location, index) => (
               <div key={index} className="card-gold p-6 text-center">
                 <Building className="w-12 h-12 text-primary mx-auto mb-4" />
@@ -228,7 +230,7 @@ const Contact = () => {
               </div>
             ))}
           </div> */}
-        {/* </div>
+      {/* </div>
       </section> */}
 
       {/* Map Section (Placeholder) */}

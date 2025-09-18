@@ -125,14 +125,14 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <div className="flex items-center justify-center sm:justify-start">
+            {/* <div className="flex items-center justify-center sm:justify-start">
               <Phone className="w-5 h-5 text-primary mr-2" />
               <span className="text-foreground">+1 (555) 123-4567</span>
             </div>
             <div className="flex items-center justify-center sm:justify-start">
               <Mail className="w-5 h-5 text-primary mr-2" />
               <span className="text-foreground">info@jpdiamondlab.com</span>
-            </div>
+            </div> */}
             <div className="flex items-center justify-center sm:justify-start">
               <MapPin className="w-5 h-5 text-primary mr-2" />
               <span className="text-foreground">NSC Bose Road, Chennai</span>
