@@ -33,7 +33,7 @@ const TestimonialCard = ({ name, role, company, content, rating }: TestimonialCa
         </div>
         <div className="ml-4">
           <h4 className="font-semibold text-foreground">{name}</h4>
-          <p className="text-sm text-muted-foreground">{role}, {company}</p>
+          <p className="text-sm text-muted-foreground">{role} <br/> {company}</p>
         </div>
       </div>
     </div>

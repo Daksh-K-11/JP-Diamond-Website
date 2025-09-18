@@ -8,40 +8,26 @@ import labTesting from '@/assets/lab-testing.jpg';
 const About = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Sanket Jain",
       role: "Jewelry Store Owner",
-      company: "Elegant Gems",
-      content: "JP Diamondlab has been our trusted certification partner for over 10 years. Their attention to detail and quick turnaround times have helped us build customer confidence.",
+      company: "MP Diamonds",
+      content: "As a fellow gemologist, I appreciate their thorough methodology and state-of-the-art equipment. Truly professional work.",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      role: "Diamond Dealer",
-      company: "Chen & Associates",
+      name: "Sanket",
+      role: "Customer",
+      company: "",
       content: "The precision and reliability of their reports are unmatched. Every certificate tells the complete story of the diamond with scientific accuracy.",
       rating: 5
     },
     {
-      name: "Emma Rodriguez",
-      role: "Private Collector",
-      company: "Rodriguez Collection",
+      name: "Muthu Kumar",
+      role: "Customer",
+      company: "",
       content: "Professional service and comprehensive reports. I trust jpdiamondlab for all my high-value diamond investments.",
       rating: 5
     },
-    {
-      name: "David Kumar",
-      role: "Auction House Director",
-      company: "Premium Auctions",
-      content: "Their internationally recognized certifications add significant value to our auction pieces. Exceptional quality and service.",
-      rating: 5
-    },
-    {
-      name: "Lisa Thompson",
-      role: "Gemologist",
-      company: "Independent Appraiser",
-      content: "As a fellow gemologist, I appreciate their thorough methodology and state-of-the-art equipment. Truly professional work.",
-      rating: 5
-    }
   ];
 
   // const achievements = [
