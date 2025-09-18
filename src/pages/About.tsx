@@ -8,7 +8,7 @@ import labTesting from '@/assets/lab-testing.jpg';
 const About = () => {
   const testimonials = [
     {
-      name: "Sanket Jain",
+      name: "Parsan Jain",
       role: "Jewelry Store Owner",
       company: "MP Diamonds",
       content: "As a fellow gemologist, I appreciate their thorough methodology and state-of-the-art equipment. Truly professional work.",
