@@ -1,14 +1,19 @@
 User-agent: Googlebot
 Allow: /
+Sitemap: https://www.jpdiamondlab.in/sitemap.xml.gz
 
 User-agent: Bingbot
 Allow: /
+Sitemap: https://www.jpdiamondlab.in/sitemap.xml.gz
 
 User-agent: Twitterbot
 Allow: /
+Sitemap: https://www.jpdiamondlab.in/sitemap.xml.gz
 
 User-agent: facebookexternalhit
 Allow: /
+Sitemap: https://www.jpdiamondlab.in/sitemap.xml.gz
 
 User-agent: *
 Allow: /
+Sitemap: https://www.jpdiamondlab.in/sitemap.xml.gz
