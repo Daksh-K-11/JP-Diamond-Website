@@ -32,8 +32,13 @@ const Contact = () => {
       icon: Phone,
       title: 'Phone',
       details: [
+        'Janak Jain',
+        '+91 98415 72803',
+        'IGI Diamond Graduate',
+        '\u00A0',,
+        'Prince D Jain',
         '+91 70105 22933',
-        '+91 98415 72803'
+        'IGI Diamond Graduate',
       ]
     },
     {
