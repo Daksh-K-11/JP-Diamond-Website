@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import { Helmet } from "react-helmet-async";
 import TestimonialCard from '@/components/TestimonialCard';
 import { Button } from '@/components/ui/button';
 import { Award, Users, Globe, Shield, CheckCircle } from 'lucide-react';
@@ -39,6 +40,21 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>About JP Diamond Lab | Certified Diamond Testing Experts in Chennai</title>
+        <meta name="description" content="Learn about JP Diamond Lab, Chennai's trusted diamond testing and certification center. Expert team, advanced technology, and accurate grading reports."/>
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "url": "https://www.jpdiamondlab.in/about",
+          "name": "About JP Diamond Lab",
+          "description": "Information about JP Diamond Lab and our certified diamond testing services in Chennai."
+        }
+        `}</script>
+      </Helmet>
+
       <Navigation />
       
       {/* Hero Section */}
