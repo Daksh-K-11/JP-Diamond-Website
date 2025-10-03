@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Helmet } from "react-helmet-async";
 import { Link, useParams } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
@@ -166,6 +167,33 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Diamond Testing & Certification Services | JP Diamond Lab Chennai</title>
+        <meta name="description" content="Explore our diamond testing and certification services in Chennai. We provide accurate grading, professional reports, and trusted results."/>
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Diamond Testing & Certification",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "JP Diamond Lab",
+            "url": "https://www.jpdiamondlab.in",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Your Street Address",
+              "addressLocality": "Chennai",
+              "addressRegion": "Tamil Nadu",
+              "postalCode": "600001",
+              "addressCountry": "IN"
+            },
+            "telephone": "+91-XXXXXXXXXX"
+          }
+        }
+        `}</script>
+      </Helmet>
+
       <Navigation />
 
       {/* Hero Section */}
