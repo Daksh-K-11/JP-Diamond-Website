@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from "react-helmet-async";
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -46,6 +47,19 @@ const VerifyReport = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Verify Report | JP Diamond Lab | Diamond Certification Services Chennai</title>
+        <meta name="description" content="JP Diamond Lab for professional diamond testing and certification services in Chennai. Verify and view your report online, always."/>
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "Verify Report",
+          "url": "https://www.jpdiamondlab.in/verify",
+          "name": "Verify Report",
+          "description": "View your verified certificate and download it anytime, anywhere."
+        }
+        `}</script>
+      </Helmet>
       <Navigation />
       
       {/* Hero Section */}
