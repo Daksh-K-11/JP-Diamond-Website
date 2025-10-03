@@ -181,14 +181,14 @@ const Services = () => {
             "name": "JP Diamond Lab",
             "url": "https://www.jpdiamondlab.in",
             "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Your Street Address",
-              "addressLocality": "Chennai",
-              "addressRegion": "Tamil Nadu",
-              "postalCode": "600001",
-              "addressCountry": "IN"
-            },
-            "telephone": "+91-XXXXXXXXXX"
+            "@type": "PostalAddress",
+            "streetAddress": "#127/222, JS Complex, Shop No. 16, 2nd floor, NSC Bose Road",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600079",
+            "addressCountry": "IN"
+          },
+          "telephone": "+91-7010522933"
           }
         }
         `}</script>
