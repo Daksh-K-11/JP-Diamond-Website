@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -78,6 +79,28 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Contact JP Diamond Lab | Diamond Certification Services Chennai</title>
+        <meta name="description" content="Contact JP Diamond Lab for professional diamond testing and certification services in Chennai. Call us, email us, or visit our office."/>
+
+        <script type="application/ld+json">{
+        `{
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "url": "https://www.jpdiamondlab.in/contact",
+        "name": "Contact JP Diamond Lab",
+        "description": "Get in touch with JP Diamond Lab for certified diamond testing and grading services in Chennai.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-7010522933",
+          "contactType": "customer service",
+          "areaServed": "IN",
+          "availableLanguage": "English"
+          }
+        }
+        `}</script>
+      </Helmet>
+
       <Navigation />
 
       {/* Hero Section */}
