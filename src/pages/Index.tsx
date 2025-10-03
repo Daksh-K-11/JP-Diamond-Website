@@ -1,4 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";
 import { Button } from '@/components/ui/button';
 import HeroCarousel from '@/components/HeroCarousel';
 import ServiceCard from '@/components/ServiceCard';
@@ -40,8 +41,34 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>JP Diamond Lab | Trusted Diamond Testing & Certification in Chennai</title>
+        <meta name="description" content="JP Diamond Lab offers professional diamond testing, grading, and certification services in Chennai, India. Accurate results, expert analysis, and trusted reports." />
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "JP Diamond Lab",
+          "url": "https://www.jpdiamondlab.in",
+          "logo": "https://www.jpdiamondlab.in/logo.png",
+          "image": "https://www.jpdiamondlab.in/logo.png",
+          "description": "Trusted diamond testing and certification services in Chennai, India.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "#127/222, JS Complex, Shop No. 16, 2nd floor, NSC Bose Road",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600079",
+            "addressCountry": "IN"
+          },
+          "telephone": "+91-7010522933"
+        }`
+        }</script>
+
+      </Helmet>
       <Navigation />
-      
+
       {/* Hero Section */}
       <HeroCarousel />
 
@@ -55,10 +82,10 @@ const Index = () => {
             JP Diamond is a professional diamond testing laboratory established to bring
             transparency & trust to the jewelry market. Our lab is equipped with advance testing
             instruments and operated by skilled gemologists who follow international standards.
-            From checking authenticity to identifying treatments, we ensure every report 
+            From checking authenticity to identifying treatments, we ensure every report
             reflects precision and integrity.
           </p>
-          
+
           {/* Stats */}
           {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {stats.map((stat, index) => (
@@ -120,10 +147,10 @@ const Index = () => {
             Ready to Certify Your Diamonds?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Get in touch with our expert team for professional diamond certification services. 
+            Get in touch with our expert team for professional diamond certification services.
             We're here to help you with all your needs.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             {/* <div className="flex items-center justify-center sm:justify-start">
               <Phone className="w-5 h-5 text-primary mr-2" />
