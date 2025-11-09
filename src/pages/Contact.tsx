@@ -177,8 +177,8 @@ const Contact = () => {
                   />
                 </div>
                 <Link to='/contact'>
-                  <Button className="btn-gold w-full sm:w-auto">
-                    {/* <Send className="w-4 h-4 mr-2" /> */}
+                  <Button className="pybtn-gold w-full sm:w-auto">
+                    <Send className="w-4 h-4 mr-2" />
                     Send Message
                   </Button>
                 </Link>
