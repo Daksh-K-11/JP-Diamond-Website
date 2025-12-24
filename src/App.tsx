@@ -28,6 +28,7 @@ const App = () => (
             <Route path="/services" element={<Navigate to="/services/diamond-certification" replace />} />
             <Route path="/services/:serviceId" element={<Services />} />
             <Route path="/verify" element={<VerifyReport />} />
+            <Route path="/verify/:summaryNo?" element={<VerifyReport />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
